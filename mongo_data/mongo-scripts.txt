@@ -1,0 +1,11 @@
+
+//to push files or images to mongo db
+
+mongofiles -d ordocuments put path_to_your_file
+
+mongodump --db ordocuments --collection fs.files --out path_to_your_folder
+mongodump --db ordocuments --collection fs.files --out path_to_your_folder
+
+
+mongorestore --db ordocuments --collection fs.chunks path_to_your_folder\fs.chunks.bson
+mongorestore --db ordocuments --collection fs.files path_to_your_folder\fs.files.bson 

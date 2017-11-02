@@ -1,0 +1,41 @@
+	<div class="container">
+
+	<div class="row">
+	<div class="col-md-12">
+	     <form class="form-inline" role="search" ng-submit="upload()" enctype="multipart/form-data">
+		    <!-- <div class="form-group">
+          <input type="text" class="form-control" name="documentName" ng-model="documentName" placeholder="Document Name">
+        </div> -->
+         <div class="form-group">
+          <input type="text" class="form-control" name="aliases" ng-model ="aliases" placeholder="aliases">
+         </div>
+         <!--   <div class="form-group">
+          <input type="text" class="form-control" ng-model ="documentAlias" placeholder="Document Alias">
+         </div> -->
+           <!-- <div class="form-group">
+          <input type="text" class="form-control" name="metadata" ng-model ="metadata" placeholder="metadata">
+         </div> -->
+         <div class="form-group">
+          <input type="text" class="form-control" name="exchangeName" ng-model ="exchangeName" placeholder="Exchange Name" required>
+         </div>
+         <div class="form-group">
+          <input type="text" class="form-control" name="exchangeDistance" ng-model ="exchangeDistance" placeholder="Exchange Distance" required>
+         </div>
+           <div class="form-group">
+          	 <!-- <input type="file" ng-model="filename" />
+         	<button type="submit" class="btn btn-primary">Upload</button> -->
+         	<span class="btn btn-default btn-file">Browse... 
+         	<input data-file type="file" id="file" name="file" ng-file-select ng-model="file" />
+         	</span>
+
+          </div>
+          <div class="form-group">
+          
+         	<button type="submit" class="btn btn-info"><i class="glyphicon glyphicon-upload"></i>Upload</button>
+          </div>
+	       </form>
+	</div>
+
+	</div>
+
+  </div
